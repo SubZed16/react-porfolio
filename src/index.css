@@ -1,0 +1,66 @@
+ /*             linerGradients    
+      Strawbarry effect >>>linear-gradient(45deg,#a01717c9,aliceblue);
+      Lightmode effect >>>linear-gradient(45deg,#bab6b6c9,aliceblue);
+      Drakemode effect >>>linear-gradient(45deg,#bab6b6c9,aliceblue);
+  */
+
+
+:root{
+  /*      home page & side bar shit    dm   */
+  /* --main-bg-color-dm:#000000;
+  --sideBar-back-ground-color-dm:#010e05;
+  --sideBar-nav-icons-text-color-dm:#FAF3E0;
+  --sideBar-active-nav-action-dm: #FAF3E0; */
+  /*     home page & side bar shit     lm     */
+  --main-bg-color-lm:#e0e4e7;
+  --sideBar-back-ground-color-lm:#e0e4e7;
+  --sideBar-nav-icons-text-color-lm:#353331;
+  --sideBar-active-nav-action-lm: #353331;
+
+/*############################################*/
+  /*#2e68fd*/
+  --Contact-btn-color-lm:#2e68fd;
+  --inner-Contact-btn-txt-color-lm:#2e68fd;
+  --inner-Contact-btn-txt-color-hover-lm:#e0e4e7;
+  --tags-color-lm:#2e68fd;
+  --H1-color-Greeting-lm:#2e68fd;
+  --H2-color-lm:#353331;
+}
+
+html {
+  font-size: 62.5%;
+   background:linear-gradient(45deg,#40a798 27%,#c4c1e0);
+  /* background:linear-gradient(45deg,
+                    100% var(--main-bg-color),
+                    #2e68fd);                
+ */}
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg,100% #a01717c9,aliceblue);;
+  overflow: hidden;
+  display: block;
+}
+html.strawbarry{
+  background:linear-gradient(45deg,#a01717c9,aliceblue);
+}
+html.light {
+  background:linear-gradient(45deg,#bab6b6c9,aliceblue);
+  --main-bg-color:var(--main-bg-color-lm);
+  --sideBar-back-ground-color:var(  --sideBar-back-ground-color-lm);
+  --sideBar-nav-icons-text-color:var(  --sideBar-nav-icons-text-color-lm);
+  --sideBar-active-nav-action:var(  --sideBar-active-nav-action-lm);
+
+  /*########################*/
+  --Contact-btn-color:var(  --Contact-btn-color-lm);
+  --inner-Contact-btn-txt-color:var(  --inner-Contact-btn-txt-color-lm);
+  --inner-Contact-btn-txt-color-hover:var(  --inner-Contact-btn-txt-color-hover-lm);
+  --tags-color:var(  --tags-color-lm);
+  --H1-color-Greeting:var(  --H1-color-Greeting-lm);
+  --H2-color:var(  --H2-color-lm);
+
+  /****************************/
+}
