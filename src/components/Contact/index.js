@@ -58,7 +58,7 @@ const form = useRef()
   const formCheck=()=>checkNoneEmpty()&&checkMailInput()
 
   const alertmessge=()=>{
-     if(checkNoneEmpty()&&!checkMailInput()){
+     if(checkNoneEmpty()&&checkMailInput()===false){
        const alertmsg=isEnglish?"we only accepet mails on this form :> @gmail.com @yahoo.com/fr @outlook.com!🐱‍🏍":"nous n'acceptons que les mails sur ce formulaire : > @gmail.com @yahoo.com/fr @outlook.com !🐱‍🏍"
        //console.log(data)
        return alert(alertmsg)
