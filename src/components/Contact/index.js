@@ -46,14 +46,12 @@ const form = useRef()
   const checkMailInput=()=>{
     const list = ["@gmail.com","@yahoo.fr","@yahoo.com"," @outlook.com"]
     for (const item in list ){
-      if(data.email.includes(item)){
+      if(data.email.includes(list[item]))){
         //console.log(data.email)
         return true
       }
-    else{
-      //console.log("we only accepet mails on this form :> @gmail.com @yahoo.com/fr @outlook.com!")
-      return false
-    }}
+   }
+   return false
   }
   const formCheck=()=>checkNoneEmpty()&&checkMailInput()
 
